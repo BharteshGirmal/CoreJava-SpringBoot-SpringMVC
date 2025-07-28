@@ -17,4 +17,9 @@ public class Main {
         mtBook.retrunBook();
         System.out.println("total Books After Returning "+ Book.getTotalNoBooks());
     }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Memory has been cleared");
+    }
 }
